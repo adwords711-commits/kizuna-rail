@@ -61,6 +61,7 @@
 
         <div class="route-operating">
             <h2>Operating Schedule</h2>
+            <!-- EJS templating displays the operating months as abbreviated month badges.-->
             <div class="months-grid">
                 <% details.operatingMonths.forEach(function(month) { %>
                 <span class="month-badge"><%= monthToAbbreviation(month) %></span>

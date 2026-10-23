@@ -12,7 +12,7 @@ router.get('/', listRoutesPage);
 // Route details page
 router.get('/:routeId', routeDetailsPage);
 
-// Book ticket
+// Book ticket / uses router.get and router.post to connect URL paths */
 router.get('/booking/:scheduleId', bookingPage);
 router.post('/book', processBookingRequest);
 

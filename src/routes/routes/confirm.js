@@ -1,6 +1,7 @@
 import { getConfirmationById } from '../../models/model.js';
 import { yenToUsd } from '../../includes/helpers.js';
 
+/* Retrieves booking confirmation details and displays the confirmation page */
 export default async (req, res) => {
     const { confirmationId } = req.params;
 

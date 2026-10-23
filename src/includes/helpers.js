@@ -25,7 +25,7 @@ const yenToUsd = (yen) => {
     const exchangeRate = 0.0066; // Example rate: 1 Yen = 0.0066 USD
     return yen * exchangeRate;
 };
-
+/* Arrow function Converts a month number into 3 letter avreviation */
 const monthToAbbreviation = (month) => {
     const months =['Jan', 'Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec', ];
 

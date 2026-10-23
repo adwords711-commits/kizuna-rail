@@ -430,9 +430,6 @@ article.confirmation-page {
         padding: 0 !important; /* removes inner space */
         font-size: 10pt; /* makes text more compact */
 
-    }
-    body {
-    outline: 5px solid red !important;
+    } 
 }
 
-}
