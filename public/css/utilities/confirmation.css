@@ -405,15 +405,34 @@ article.confirmation-page {
     }
 }
 
-@media print {
-    article.confirmation-page {
-        .confirmation-actions {
-            display: none;
-        }
-
-        .confirmation-header {
-            background-color: white;
-            border: 2px solid var(--clr-primary);
-        }
+@page {
+        margin: 0.2in; /* Reduces the margins */
     }
+
+@media print {
+    .confirmation-actions {
+        display:none !important; /* Hides print confirmation and browse more routes */
+
+    }
+    header,
+    footer {
+        display: none !important;  /* Hides site navigation and fotter on paper */
+
+    }
+
+    .confirmation-header,
+    .confirmation-content section {
+        margin-bottom: 4px; /* Reduces space between major siections */
+    }
+
+    .confirmation-page {
+        margin: 0 !important; /*removes outer spacing */
+        padding: 0 !important; /* removes inner space */
+        font-size: 10pt; /* makes text more compact */
+
+    }
+    body {
+    outline: 5px solid red !important;
+}
+
 }

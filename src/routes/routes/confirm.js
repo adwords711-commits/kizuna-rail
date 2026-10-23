@@ -1,4 +1,5 @@
-import { getConfirmationById } from '../models/model.js';
+import { getConfirmationById } from '../../models/model.js';
+import { yenToUsd } from '../../includes/helpers.js';
 
 export default async (req, res) => {
     const { confirmationId } = req.params;
@@ -7,6 +8,8 @@ export default async (req, res) => {
 
     res.render('routes/confirm', {
         title: 'Trip Confirmation',
-        confirmation
+        confirmation,
+        yenToUsd
+
     });
 };

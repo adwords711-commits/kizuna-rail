@@ -1,3 +1,10 @@
+#filters {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-md);
+    align-items: center;
+    margin-bottom: var(--apace-lg);
+}
 .routes-grid {
     display: flex;
     flex-direction: column;
